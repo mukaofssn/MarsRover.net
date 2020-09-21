@@ -7,19 +7,21 @@ An application to control the movements of a Mars rover. Surface considered is 1
 4. starts in number 1
 5. after each set of commands reports back its current position and direction it is facing.
 
-
-e.g
+e.g.
 1. 50m
 2. Left
 3. 23m
 4. Left
 5. 4m
 
-The above set of commands would cause the rover to report back position 4624 north. The next set of commands should then continue from this square. 
+The above set of commands would cause the rover to report back position 4624 north. 
 Please note that the rover cannot go out of this area so will halt all commands when it has reached its perimeter.
 
-Diagram1….
-1 2 3 …
-101 102 103 …
-201 202 203 …
-… … … …”
+1   2   3   … 100
+101 102 103 … 200
+201 202 203 … 300
+… … … … … … … 10000
+
+Todo:
+- The subsequent set of commands should be executed from the location/square the rover was last present. 
+- UI?
