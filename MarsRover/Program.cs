@@ -6,7 +6,7 @@ namespace MarsRover
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var rover = new Rover();
             var instructions = new List<string>();
@@ -50,7 +50,7 @@ namespace MarsRover
                                 commands.Add(() => rover.Proceed(result));
                             }
                             break;
-                    };
+                    }
                 }
 
                 if (!rover.AddCommands(commands)) return;
